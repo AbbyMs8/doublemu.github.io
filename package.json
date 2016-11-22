@@ -1,0 +1,30 @@
+{
+  "name": "doublemu.github.io",
+  "version": "1.0.0",
+  "description": "\"a website for me\"",
+  "main": "app/pages/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doublemu/doublemu.github.io.git"
+  },
+  "author": "zhaolin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doublemu/doublemu.github.io/issues"
+  },
+  "homepage": "https://github.com/doublemu/doublemu.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rev": "^7.1.2",
+    "gulp-rev-collector": "^1.0.5",
+    "gulp-rev-replace": "^0.4.3",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.2"
+  }
+}
