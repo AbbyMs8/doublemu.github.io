@@ -3,7 +3,7 @@ var Util = (function(){
 })();
 
 var banner = new Image();
-banner.src = "../imgs/banner.jpg";
+banner.src = "./app/imgs/banner.jpg";
 
 
 banner.addEventListener("load",start,false);

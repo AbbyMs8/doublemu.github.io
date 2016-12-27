@@ -2,7 +2,7 @@
   "name": "doublemu.github.io",
   "version": "1.0.0",
   "description": "\"a website for me\"",
-  "main": "app/pages/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
