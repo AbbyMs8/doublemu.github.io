@@ -125,20 +125,20 @@ header nav {
 	line-height: 1.3em;
 }
 .main .welcome {
-	top: 30%;
+	top: 40%;
 	font-style: italic;
 }
 .main .slogan {
-	top: 40%;
+	top: 50%;
 	font-size: 4em;
 }
 .main .name {
 	width: 200px;
 	height: 50px;
 	position: absolute;
-	top: 50%;
+	top: 70%;
 	left: 50%;
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 	margin-left: -100px;
 	color: #fff;font-size: 22px;
 	text-align: center;

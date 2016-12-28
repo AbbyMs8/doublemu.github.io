@@ -1,0 +1,21 @@
+* {padding: 0;margin: 0;font:14px "Microsoft Yahei";}
+html,body {height: 100%;}
+.js-waterfall {margin: auto;}
+.waterfall {border-top:1px solid #ccc;position: relative;}
+.waterfall:after {content: '';overflow: hidden;height: 1px;clear: both;visibility: hidden;display: block;}
+.box {width:300px;border:1px solid #ccc;padding: 20px;float: left;margin-top: -1px;margin-right: -1px;transform: scale(1);-webkit-transform: scale(1);-moz-transform: scale(1);transition: all .6s;-webkit-transition: all .6s;-moz-transition: all .6s;transform-origin: 0 0;-webkit-transform-origin: 0 0;-moz-transform-origin: 0 0;}
+.box.trans {transform: scale(0.01);-webkit-transform: scale(0.01);-moz-transform: scale(0.01);}
+.box img {height: 200px;width: 100%;}
+
+.tag {position: relative;padding:0 5px;color: #fff;margin-right: 10px;}
+.tag.hot {background: #f00;}
+.tag.comment {background:#60baf9 }
+.tag.magic {background:#ccc; }
+.triangle {height: 0;width: 0;display: block;position: absolute;right: -16px;top: 1px;border-width: 8px;border-style:solid;border-color: transparent transparent transparent transparent;}
+.tag.hot .triangle {border-left-color: #f00;}
+.tag.comment .triangle {border-left-color: #60baf9;}
+.tag.magic .triangle {border-left-color: #ccc;}
+
+.title {font-size: 20px;padding: 10px 0;}
+
+.box p {line-height: 24px;margin-top: 20px;}

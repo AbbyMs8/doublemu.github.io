@@ -12,14 +12,21 @@ function start(){
 		cxt.translate(width/2,height/2);
 		// 画轮廓
 		cxt.beginPath();
-		cxt.lineWidth = r*0.05;//轮廓圆宽度
-		cxt.strokeStyle = "#ccc";//轮廓圆颜色
+		var img = document.createElement("img");
+		img.src = "./app/imgs/clock_b.png";
+		var pat=cxt.createPattern(img,"repeat");
+		cxt.lineWidth = r*0.1;//轮廓圆宽度
+		cxt.strokeStyle=pat;
+		cxt.fillStyle = "#fff";
+		// cxt.strokeStyle = "#76b852";//轮廓圆颜色
 		cxt.arc(0,0,r-r*0.05,0,2*Math.PI); //圆
+		cxt.fill();
 		cxt.stroke();
 		cxt.closePath();
 		// 画内圆
 		cxt.beginPath();
 		cxt.lineWidth = 1;
+		cxt.strokeStyle = "#ccc";
 		var radi2 = r*0.85; //半径
 		cxt.arc(0,0,radi2,0,2*Math.PI); //圆
 		cxt.stroke();
@@ -34,11 +41,11 @@ function start(){
 			cxt.beginPath();
 			cxt.fillStyle = "#ccc";
 			if(deg%30==0){
-				cxt.fillStyle = "#ccc";
+				cxt.fillStyle = "#333";
 				spot = r*0.025;
-				var textX =(radi2*0.85)*Math.sin(deg*2*Math.PI/360); //文字x坐标
-				var textY =(radi2*0.85)*Math.cos(deg*2*Math.PI/360); //文字y坐标
-				cxt.font = r*0.1 + "px Arial"; 
+				var textX =(radi2*0.8)*Math.sin(deg*2*Math.PI/360); //文字x坐标
+				var textY =(radi2*0.8)*Math.cos(deg*2*Math.PI/360); //文字y坐标
+				cxt.font = r*0.2 + "px Arial"; 
 				cxt.textBaseline = "middle";// 文字垂直对齐方式
 				cxt.textAlign = "center";   // 文字水平对齐方式
 				cxt.fillText(hour[i],textX,textY);
@@ -61,6 +68,7 @@ function start(){
 		cxt.beginPath();
 		cxt.rotate(2*Math.PI/12*h);
 		cxt.lineWidth = r*0.05;
+		cxt.strokeStyle = "#ccc";
 		cxt.lineCap = "round";
 		cxt.moveTo(0,r*0.4*0.2);
 		cxt.lineTo(0,-r*0.4*0.8);
@@ -74,6 +82,7 @@ function start(){
 		cxt.save();
 		cxt.beginPath();
 		cxt.rotate(2*Math.PI/60*m);
+		cxt.strokeStyle = "#ccc";
 		cxt.lineWidth = 3;
 		cxt.lineCap = "round";
 		cxt.moveTo(0,r*0.6*0.2);
@@ -87,7 +96,7 @@ function start(){
 		cxt.save();
 		cxt.beginPath();
 		cxt.rotate(2*Math.PI/60*s);
-		cxt.strokeStyle = "#ff004f";
+		cxt.strokeStyle = "#76b852";
 		cxt.lineWidth = 1;
 		cxt.lineCap = "round";
 		cxt.moveTo(0,r*0.8*0.2);
