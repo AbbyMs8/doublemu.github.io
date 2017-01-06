@@ -81,7 +81,6 @@
                                         '<div class="tags">'+
                                           '<span class="tag hot">'+ obj.water[i].tags[0]+'<b class="triangle"></b></span>'+
                                           '<span class="tag hot">'+ obj.water[i].tags[1]+'<b class="triangle"></b></span>'+
-                                          '<span class="tag hot">'+ obj.water[i].tags[2]+'<b class="triangle"></b></span>'+
                                         '</div>'+
                                         '<h1 class="title">'+ obj.water[i].title+'</h1>'+
                                         '<img src="'+obj.water[i].pic+'">'+
